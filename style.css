@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(120deg, #e0e7ff 0%, #f0f4f8 100%);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 2.5rem 2rem;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+label {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 0.3rem;
+    text-align: left;
+}
+
+input[type="number"], select {
+    padding: 0.6rem;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f7fafc;
+    color: #2d3748;
+    transition: border 0.2s;
+}
+
+input[type="number"]:focus, select:focus {
+    border-color: #4299e1;
+    outline: none;
+}
+
+button[type="submit"] {
+    background: linear-gradient(90deg, #4299e1 0%, #667eea 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #2563eb 0%, #4299e1 100%);
+}
+
+#resultDisplay {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    color: #2563eb;
+    min-height: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
