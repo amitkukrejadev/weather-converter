@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main>
+        <h1>Weather Converter</h1>
+        <section>
+            <form id="converter-form" autocomplete="off">
+                <label for="degreesInput">Degrees</label>
+                <input type="number" id="degreesInput" name="degreesInput" placeholder="Enter value" required>
+                
+                <label for="typeSelect">Type</label>
+                <select id="typeSelect" name="typeSelect">
+                    <option value="Fahrenheit">Fahrenheit to Celsius</option>
+                    <option value="Celsius">Celsius to Fahrenheit</option>
+                </select>
+                
+                <button type="submit">Convert</button>
+            </form>
+            <div id="resultDisplay"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
